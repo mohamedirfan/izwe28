@@ -8,6 +8,7 @@ echo "$1 is the source path of txn data sent by the source system"
 echo "$2 is the hive table with schema prefixed will be loaded with the above files generically"
 
 rm -f $1/partload.hql
+rm -f $1/partload1.hql
 
 if [ $# -ne 2 ]
 then
